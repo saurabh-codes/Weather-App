@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/1f08346f9f.js" crossorigin="anonymous"></script> 
+     
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header id="header">
+        <h2>Saurabhcodes</h2>
+    </header>
+
+    <!-- End Header Section -->
+
+
+<!-- Body Section Start -->
+<div id="container">
+    <!-- Card Section Start -->
+    <div class="card">
+        
+        <!-- Search Menu -->
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <!-- Output Section -->
+        <div class="weather loading">
+            <h2 class="city">Weather in Toronto</h2>
+            <h1 class="temp">21°C</h1>
+            <div class="flex">
+            <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon">
+            <div class="description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity: 70%</div>
+            <div class="wind">Wind Speed: 10.5 km/h</div>
+
+        </div>
+   
+    </div>
+    <!-- End Card Section -->
+</div>
+<!-- End Body Section -->
+
+
+    <!-- Footer Section Start -->
+    <section id="copyright">
+        <p>Copyright &copy; Saurabh Codes 2022-23</p>
+      </section>
+    <!-- End Footer Section -->
+
+
+
+    <!-- Js File -->
+    <script src="js/app.js"></script>
+</body>
+</html>

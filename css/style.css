@@ -1,0 +1,157 @@
+/* General Values Start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* End General Values */
+
+
+/* Header Section Start */
+#header{
+    background-color: #17252a;
+    padding: 1rem 1rem 1rem 6rem;
+    text-shadow: 2px 2px #5cdb95;
+    color: #edf5e1;     
+}
+
+#header h2{
+    font-weight: bold;
+}
+
+/* End Header Section */
+
+
+/* Card Section Start */
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #5cdb95;
+    background-image: url("https://source.unsplash.com/1600x900/?nature,wildflower");
+}
+
+.card{
+    background-color: #17252ad0;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+    margin: 1rem;
+    color: #edf5e1;
+}
+
+.search{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    height: 2.6rem;
+    width: 2.6rem;
+    outline: none;
+    background-color: #2b7a782b;
+    color: #edf5e1;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #2b7a78;
+}
+
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    background-color: #2b7a782b;
+    font-size: 120%;
+    color: #edf5e1;
+    width: calc(100% - 100px);
+}
+
+.weather.loading{
+    visibility: hidden;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: #edf5e1;
+}
+
+.city{
+    margin-bottom: 1rem;
+}
+
+.fa-solid{
+    font-size: 1.5rem;
+}
+
+.fa-solid:hover{
+    color: #5cdb95;
+    transition: all 0.3 ease-in-out;
+}
+
+.weather h1{
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    margin-bottom: 0.5rem;
+}
+
+.humidity{
+    margin-bottom: 0.5rem;
+}
+
+/* End Card Section */
+
+
+/* Footer Section Start */
+#copyright{
+    background-color: #17252a;
+    text-align: center;
+    color: #edf5e1;
+    padding: 1rem;
+}
+
+/* End Footer Section */
+
+
+/* Responsive Design Start */
+@media only screen and (max-width: 720px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* Header Section */
+    #header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;  
+    }
+
+}
+
+/* End Responsive Design */
